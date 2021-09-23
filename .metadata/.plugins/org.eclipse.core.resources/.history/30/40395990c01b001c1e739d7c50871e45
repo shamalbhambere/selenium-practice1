@@ -1,0 +1,21 @@
+import java.util.HashMap;
+
+public class practice {
+
+	public static void main(String[] args) {
+	
+		String str="amit is a boy & Shamal is a girl";
+		HashMap<String, Integer> hashMap = new HashMap<>();
+		
+		String[] s=str.split(" ");
+		for(String words : s) {
+			if(hashMap.containsKey(words)) {
+				hashMap.put(words, hashMap.get(words)+1);
+			}else {
+				hashMap.put(words, 1);
+			}
+		}
+		System.out.println(hashMap);
+	}
+
+}

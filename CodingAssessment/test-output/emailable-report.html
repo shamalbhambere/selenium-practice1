@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num">34,233</td><td></td><td></td></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.testcases.homePageTest</td><td><a href="#m0">enterTravelDetails</a></td><td rowspan="1">1632343957104</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.testcases.homePageTest</td><td><a href="#m1">clickONFlightTab</a></td><td rowspan="1">1632343945516</td><td rowspan="1">828</td></tr></tbody></table><h2>Test</h2><h3 id="m0">com.qa.testcases.homePageTest#enterTravelDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NoSuchMethodError: org.apache.poi.util.POILogger.log(ILjava/lang/Object;)V
+Caused by: java.lang.NoSuchMethodError: org.apache.poi.util.POILogger.log(ILjava/lang/Object;)V
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:304)
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:156)
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:124)
+	at org.apache.poi.openxml4j.opc.PackagePart.loadRelationships(PackagePart.java:559)
+	at org.apache.poi.openxml4j.opc.PackagePart.&lt;init&gt;(PackagePart.java:112)
+	at org.apache.poi.openxml4j.opc.PackagePart.&lt;init&gt;(PackagePart.java:83)
+	at org.apache.poi.openxml4j.opc.PackagePart.&lt;init&gt;(PackagePart.java:128)
+	at org.apache.poi.openxml4j.opc.ZipPackagePart.&lt;init&gt;(ZipPackagePart.java:78)
+	at org.apache.poi.openxml4j.opc.ZipPackage.getPartsImpl(ZipPackage.java:218)
+	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:662)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:269)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:73)
+	at com.qa.util.TestUtil.getTestData(TestUtil.java:32)
+	at com.qa.testcases.homePageTest.getDataFromExcel(homePageTest.java:43)
+	... 22 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.qa.testcases.homePageTest#clickONFlightTab</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

@@ -1,0 +1,25 @@
+import java.util.LinkedHashSet;
+
+public class RemoveAllElemtsFromLInkedHashSet {
+
+	public static void main(String[] args) {
+		
+		LinkedHashSet<String> lhs = new LinkedHashSet<String>();
+		lhs.add("Java");
+		lhs.add("JavaScript");
+		lhs.add("Angular");
+		lhs.add("React");
+		lhs.add("Selenium");
+		lhs.add("Cucumber");
+		
+		LinkedHashSet<String> lhs1 = new LinkedHashSet<String>();
+		lhs.add("Java");
+		lhs.add("React");
+		lhs.add("Selenium");
+		
+		lhs1.removeAll(lhs);
+		System.out.println("Remove all elemts from linkedhashset :"+lhs);
+
+	}
+
+}

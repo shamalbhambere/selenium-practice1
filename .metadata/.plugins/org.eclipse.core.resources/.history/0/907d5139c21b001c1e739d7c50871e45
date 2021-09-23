@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class practice {
+
+	public static void main(String[] args) {
+	
+		ArrayList<String> duplicate = new ArrayList<>();
+		duplicate.add("java");
+		duplicate.add("javas");
+		duplicate.add("javas");
+		duplicate.add("java");
+		duplicate.add("java");
+		duplicate.add("java");
+		
+		ArrayList<String> nonDuplicate = new ArrayList<>();
+		
+		Iterator<String> it = duplicate.iterator();
+		
+		while(it.hasNext()) {
+			String word = it.next();
+			if(nonDuplicate.contains(word)) {
+				nonDuplicate.remove(word);
+			}else {
+				nonDuplicate.add(word);
+			}
+			
+		}
+		
+		System.out.println(nonDuplicate);
+	}
+	
+}

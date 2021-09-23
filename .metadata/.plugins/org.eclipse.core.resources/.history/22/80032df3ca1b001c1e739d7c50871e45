@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class practice {
+
+	public static void main(String[] args) {
+	
+		ArrayList<String> duplicate = new ArrayList<>();
+		String st = "helloll";
+		char str[] = st.toCharArray();
+		for (int i = 1; i < str.length; i++) {
+			if (str[i - 1] == 'l' && str[i] == 'l') {
+				str[i - 1] = 'a';
+				str[i] = 'a';
+
+			}
+		}
+	
+		System.out.println("The modified string is :");
+		System.out.println(str);
+
+	}
+	
+}

@@ -1,0 +1,5 @@
+package com.qa.extentReportListener;
+
+public class ExtentReporterNG {
+
+}

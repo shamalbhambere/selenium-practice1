@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FreeCRMTestData.xlsx&apos; to &apos;CodingAssessment/src/main/java/com.qa.testdata&apos;&#x0D;&#x0A;- Original project: &apos;FreeCRMFreamwork&apos;&#x0D;&#x0A;- Destination element: &apos;CodingAssessment/src/main/java/com.qa.testdata&apos;&#x0D;&#x0A;- Original element: &apos;FreeCRMTestData.xlsx&apos;" description="Copy file" destination="=CodingAssessment/src\/main\/java&lt;com.qa.testdata" element1="src/main/java/com/qa/testdata/FreeCRMTestData.xlsx" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1631628546330" units="0" version="1.0"/>
+</session>
