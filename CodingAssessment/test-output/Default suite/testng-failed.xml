@@ -6,6 +6,7 @@
       <class name="com.qa.testcases.homePageTest">
         <methods>
           <include name="enterTravelDetails"/>
+          <include name="clickONFlightTab"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

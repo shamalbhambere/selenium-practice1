@@ -157,7 +157,7 @@ Caused by: java.lang.NoSuchMethodError: org.apache.poi.util.POILogger.log(ILjava
 	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:269)
 	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:73)
 	at com.qa.util.TestUtil.getTestData(TestUtil.java:32)
-	at com.qa.testcases.homePageTest.getDataFromExcel(homePageTest.java:43)
+	at com.qa.testcases.homePageTest.getDataFromExcel(homePageTest.java:33)
 	... 22 more
 ... Removed 30 stack frames
 </div> <!-- stack-trace -->
@@ -191,7 +191,7 @@ Caused by: java.lang.NoSuchMethodError: org.apache.poi.util.POILogger.log(ILjava
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.qa.extentReportListener.ExtentReporterNG&quot;/&gt;
+    &lt;listener class-name=&quot;qa.ExtentReportListener.ExtentReporterNG&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
@@ -239,7 +239,7 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'clickONFlightTab')
 data.setCell(0, 2, 'com.qa.testcases.homePageTest')
-data.setCell(0, 3, 828);
+data.setCell(0, 3, 2165);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'enterTravelDetails')
 data.setCell(1, 2, 'com.qa.testcases.homePageTest')
@@ -248,7 +248,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 828 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -281,11 +281,11 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickONFlightTab</span>
-                <span class="method-start">22606 ms</span>
+                <span class="method-start">22890 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23436 ms</span>
+                <span class="method-start">25058 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

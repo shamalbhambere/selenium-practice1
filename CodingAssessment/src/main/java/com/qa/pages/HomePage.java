@@ -52,8 +52,12 @@ public class HomePage extends TestBase {
 
 	public void enterDates() {
 		fromDate.click();
+
+		driver.findElement(By.xpath("/html/body/div[10]/div[3]/span[2]/span[2]/span[4]/span[4]/span")).click();
+
 		toDate.click();
-		
+		driver.findElement(By.xpath("/html/body/div[10]/div[4]/span[2]/span[2]/span[4]/span[3]/span")).click();
+
 	}
 
 	public void clickOnSearch() {

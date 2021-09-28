@@ -17,8 +17,8 @@ public class RemoveAllElemtsFromLInkedHashSet {
 		lhs1.add("React");
 		lhs1.add("Selenium");
 		
-		lhs.removeAll(lhs1);
-		System.out.println("Remove all elements from linkedhashset :"+lhs1);
+		
+		System.out.println("Remove all elements from linkedhashset :"+lhs.removeAll(lhs1));
 		
 		
 

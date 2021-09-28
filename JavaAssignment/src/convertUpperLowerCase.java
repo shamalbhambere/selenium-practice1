@@ -6,6 +6,7 @@ public class convertUpperLowerCase {
 		String input = "I LOVE JAVA PROGRAMMING";
 		System.out.println("Uppercase string is:" + input);
 		char strArr[] = input.toCharArray();
+		
         for(int i=0;i < strArr.length; i++) {
         	if(strArr[i] >='A' && strArr[i] <= 'Z') {
         		strArr[i] = (char) ((int) strArr[i] + 32);

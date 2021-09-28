@@ -10,6 +10,7 @@ public class ConvertHashSetToArray {
 		st.add("37");
 		st.add("73");
 		st.add("43");
+		st.add("3");
 		
 		System.out.println("Hash Set :" +st);
 		String arr[] = new String[st.size()];

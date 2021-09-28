@@ -1,8 +1,7 @@
 package com.qa.testcases;
 
-
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -10,7 +9,6 @@ import org.testng.annotations.Test;
 import com.qa.base.TestBase;
 import com.qa.pages.HomePage;
 import com.qa.util.TestUtil;
-
 public class homePageTest extends TestBase {
 
 	HomePage homePage;
@@ -30,7 +28,11 @@ public class homePageTest extends TestBase {
 
 		homePage = new HomePage();
     }
-	
+	@DataProvider
+	public Object[][] getDataFromExcel() {
+		Object data[][] = TestUtil.getTestData("Details");
+		return data;
+	}
 	
 	
 	@Test
@@ -38,12 +40,6 @@ public class homePageTest extends TestBase {
 		  homePage.clickOnFlightTab();
 		  mUtil.printLog("Flight linked opened");
 			
-	}
-	
-	@DataProvider
-	public Object[][] getDataFromExcel() {
-		Object data[][] = TestUtil.getTestData("Details");
-		return data;
 	}
 	
 	@Test(dataProvider="getDataFromExcel")

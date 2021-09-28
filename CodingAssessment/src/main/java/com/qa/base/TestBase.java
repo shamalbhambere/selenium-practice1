@@ -34,15 +34,14 @@ public class TestBase {
 		} else if (prop.getProperty("browser").equals("FF")) {
 			System.setProperty("webdriver.gecko.driver", "C:\\WorkDriver\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 			driver = new FirefoxDriver();
-		}else if (prop.getProperty("browser").equals("IE")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\WorkDriver\\geckodriver-v0.24.0-win64\\geckodriver.exe");
-			driver = new FirefoxDriver();
 		}
          driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
+		
+	
 	}
 
 

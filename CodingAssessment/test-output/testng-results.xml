@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-22T20:52:02Z" name="Suite" finished-at="2021-09-22T20:52:37Z" duration-ms="34233">
+  <suite started-at="2021-09-27T20:10:58Z" name="Suite" finished-at="2021-09-27T20:11:27Z" duration-ms="29372">
     <groups>
     </groups>
-    <test started-at="2021-09-22T20:52:02Z" name="Test" finished-at="2021-09-22T20:52:37Z" duration-ms="34233">
+    <test started-at="2021-09-27T20:10:58Z" name="Test" finished-at="2021-09-27T20:11:27Z" duration-ms="29372">
       <class name="com.qa.testcases.homePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.homePageTest@c0c2f8d]" started-at="2021-09-22T16:52:02Z" name="setUp" finished-at="2021-09-22T16:52:25Z" duration-ms="22606" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.homePageTest@c0c2f8d]" started-at="2021-09-27T16:10:58Z" name="setUp" finished-at="2021-09-27T16:11:21Z" duration-ms="22890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="clickONFlightTab()[pri:0, instance:com.qa.testcases.homePageTest@c0c2f8d]" started-at="2021-09-22T16:52:25Z" name="clickONFlightTab" finished-at="2021-09-22T16:52:26Z" duration-ms="828" status="PASS">
+        <test-method signature="clickONFlightTab()[pri:0, instance:com.qa.testcases.homePageTest@c0c2f8d]" started-at="2021-09-27T16:11:21Z" name="clickONFlightTab" finished-at="2021-09-27T16:11:23Z" duration-ms="2165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickONFlightTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.homePageTest@c0c2f8d]" started-at="2021-09-22T16:52:26Z" name="tearDown" finished-at="2021-09-22T16:52:36Z" duration-ms="10317" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.homePageTest@c0c2f8d]" started-at="2021-09-27T16:11:23Z" name="tearDown" finished-at="2021-09-27T16:11:27Z" duration-ms="4182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="enterTravelDetails(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.homePageTest@c0c2f8d]" started-at="2021-09-22T16:52:37Z" name="enterTravelDetails" data-provider="getDataFromExcel" finished-at="2021-09-22T16:52:37Z" duration-ms="0" status="SKIP">
+        <test-method signature="enterTravelDetails(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.homePageTest@c0c2f8d]" started-at="2021-09-27T16:11:27Z" name="enterTravelDetails" data-provider="getDataFromExcel" finished-at="2021-09-27T16:11:27Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.NoSuchMethodError: org.apache.poi.util.POILogger.log(ILjava/lang/Object;)V]]>
@@ -63,7 +63,7 @@ Caused by: java.lang.NoSuchMethodError: org.apache.poi.util.POILogger.log(ILjava
 	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:269)
 	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:73)
 	at com.qa.util.TestUtil.getTestData(TestUtil.java:32)
-	at com.qa.testcases.homePageTest.getDataFromExcel(homePageTest.java:43)
+	at com.qa.testcases.homePageTest.getDataFromExcel(homePageTest.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
