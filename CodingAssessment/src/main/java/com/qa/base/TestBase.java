@@ -28,7 +28,7 @@ public class TestBase {
 	public void initialization() {
 
 		if (prop.getProperty("browser").equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\WorkDriver\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\workspace\\chromedriver.exe");
 			driver = new ChromeDriver();
 
 		} else if (prop.getProperty("browser").equals("FF")) {

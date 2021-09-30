@@ -28,36 +28,33 @@ public class homePageTest extends TestBase {
 
 		homePage = new HomePage();
     }
-	@DataProvider
-	public Object[][] getDataFromExcel() {
-		Object data[][] = TestUtil.getTestData("Details");
-		return data;
-	}
+//	@DataProvider
+//	public Object[][] getDataFromExcel() {
+//		Object data[][] = TestUtil.getTestData("Details");
+//		return data;
+//	}
 	
-	
+
+	//(dataProvider="getDataFromExcel")
 	@Test
-	public void clickONFlightTab() {
-		  homePage.clickOnFlightTab();
-		  mUtil.printLog("Flight linked opened");
-			
-	}
-	
-	@Test(dataProvider="getDataFromExcel")
-	public void enterTravelDetails(String source ,  String destination) {
+	public void enterTravelDetails() throws InterruptedException {
 		
 		mUtil.printLog("User entering source and destination details ");
+
+		homePage.enterFromLocation();
 		
-		homePage.enterFromLocation(source);
-		homePage.enterToLocation(destination);
-		mUtil.printLog("Origin City - " + source
-				+ " Destination City - " + destination);
+		homePage.enterToLocation();
+		
+//		//mUtil.printLog("Origin City - " + BOM
+//				+ " Destination City - " + JFK);
+		
 		homePage.enterDates();
 		homePage.clickOnSearch();
 
 	}
-	@AfterMethod
-	public void tearDown() {
-		homePage.closeBrowser();
-	}
+//	@AfterMethod
+//	public void tearDown() {
+//		homePage.closeBrowser();
+//	}
 	
 }
